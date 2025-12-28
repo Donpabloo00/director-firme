@@ -51,14 +51,4 @@
       "permanent": true
     }
   ],
-  "crons": [
-    {
-      "path": "/api/cron/data-gov-import",
-      "schedule": "0 1 * * *"
-    },
-    {
-      "path": "/api/cron/anaf-refresh",
-      "schedule": "0 2 * * 1"
-    }
-  ]
 }
