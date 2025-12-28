@@ -8,6 +8,19 @@ const nextConfig = {
   // Generate ETags for cache busting
   generateEtags: true,
   
+  // Exclude scripts from build (they're not part of the app)
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      };
+    }
+    return config;
+  },
+  
   // Optimize images
   images: {
     formats: ['image/avif', 'image/webp'],

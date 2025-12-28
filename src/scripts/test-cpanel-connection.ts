@@ -4,6 +4,11 @@ import { sql } from 'drizzle-orm';
 
 async function testConnection() {
   try {
+    if (!db) {
+      console.error('❌ Database connection not available');
+      process.exit(1);
+    }
+
     console.log('🔍 Testing database connection to cPanel PostgreSQL...\n');
     
     // Test 1: Simple query
