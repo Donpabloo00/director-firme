@@ -1,0 +1,78 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# drizzle
+/drizzle
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# logs
+*.log
+import_log.txt
+*.txt
+!README.md
+
+# uploads (fișiere CSV mari)
+uploads/
+tmp/
+
+# documentation (păstrăm doar README.md)
+ALTERNATIVE_VERCEL.md
+DEPLOY_CPANEL.md
+DEPLOY_VERCEL_10MIN.md
+DEPLOY_VERCEL_COMPLET.md
+DEPLOY_VERCEL_FARA_GITHUB.md
+DEPLOY_VERCEL_GITHUB.md
+MIGRARE_DB_CPANEL.md
+MIGRARE_SUPABASE_CPANEL.md
+COMENZI_RAPIDE.md
+GHID_COMENZI.md
+IMPORT_FINAL_REPORT.md
+FINAL_STATUS_REPORT.md
+DEPLOYMENT.md
+
+# scripts PowerShell (nu sunt necesare în repo)
+*.ps1
+!progres.ps1
+
+# CSV files
+*.csv
+
